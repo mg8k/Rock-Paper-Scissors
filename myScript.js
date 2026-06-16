@@ -11,8 +11,6 @@ function getComputerChoice(){
     return choice;
  }
 
- let humanScore = 0;
- let computerScore=0
 
 function playGame(humanChoice, computerChoice){
     let humanScore =0; 
@@ -24,7 +22,7 @@ function playGame(humanChoice, computerChoice){
         console.log("computer choice : " + computerSelection);
         console.log("Human choice : " + humanSelection);
 
-        result = playRound(humanSelection,computerSelection);
+        let result = playRound(humanSelection,computerSelection);
 
         if (result == "win"){
             humanScore++
